@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html lang="en">
+<!-- That UI Guy -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <link rel="icon" href="assets/smartpay-images/osil-brand.png">
+    <title>SmartPay Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
+    <!-- nanoScroller -->
+    <link rel="stylesheet" type="text/css" href="bower_components/nanoscroller/bin/css/nanoscroller.css">
+    <!-- FontAwesome -->
+    <!-- <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" type="text/css" href="assets/material-design-icons/css/material-design-icons.min.css">
+    <!-- IonIcons -->
+    <link rel="stylesheet" type="text/css" href="bower_components/ionicons/css/ionicons.min.css">
+    <!-- nvd3 -->
+    <link rel="stylesheet" type="text/css" href="bower_components/nvd3/build/nv.d3.min.css">
+    <!-- Main -->
+    <link rel="stylesheet" type="text/css" href="assets/_con/css/con-base.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+    <!-- nvd3 -->
+    <link rel="stylesheet" type="text/css" href="bower_components/nvd3/build/nv.d3.min.css">
+
+
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<!--
+  Body
+    Options:
+      .boxed - boxed layout for content
+-->
+
+
+<body>
+    <nav class="navbar-top">
+        <div class="nav-wrapper">
+            <!-- Sidebar toggle -->
+            <a href="#" class="yay-toggle">
+                <div class="burg1"></div>
+                <div class="burg2"></div>
+                <div class="burg3"></div>
+            </a>
+            <!-- Sidebar toggle -->
+            <!-- Logo -->
+            <a href="index.html" class="brand-logo brand-ll">
+                <!-- <img src="assets/smartpay-images/osil-brand.png" SmartPay "> -->
+                <h4>SmartPay</h4>
+            </a>
+
+            <!-- /Logo -->
+            <!-- Menu -->
+            <ul>
+                <li>
+                    <a href="#!" class="search-bar-toggle">
+                        <i class="mdi-action-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-button " data-activates="test-dropdown " href="#! ">
+                        <i class="fa fa-bell "></i>
+                        <span class="badge new ">2</span>
+                    </a>
+                    <div id="test-dropdown " class="dropdown-content dropdown-media ">
+                        <div class="card-panel ">
+                            <div class="media-heading ">Notification
+                                <a href="# ">
+                                    <i class="mdi-content-add-circle-outline "></i>
+                                </a>
+                            </div>
+                            <div class="media-footer ">
+                                <a href="# ">
+                                    <i class="mdi-hardware-keyboard-control "></i>
+                                </a>
+                            </div>
+                            <div class="row mt-0 ">
+                                <div class="col s2 ">
+                                    <img src="assets/_con/images/avatar.jpg " alt=" " class="circle responsive-img ">
+                                </div>
+                                <div class="col s10 ">
+                                    <span class="media-date ">9:02 AM</span>
+                                    <a href="# " class="media-title ">Moses Okon Chambers</a>
+                                    <span>Moses added a Record.</span>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col s2 ">
+                                    <img src="assets/_con/images/avatar.jpg " alt=" " class="circle responsive-img ">
+                                </div>
+                                <div class="col s10 ">
+                                    <span class="media-date ">Dec 19</span>
+                                    <a href="# " class="media-title ">Delivery 234</a>
+                                    <span>Package 125 has been Delivered.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="user ">
+                    <a class="dropdown-button " data-activates="user-dropdown " href="#! ">
+                        <img src="assets/_con/images/avatar.jpg " alt="John Doe " class="circle "> Admin
+                        <i class="mdi-navigation-expand-more right "></i>
+                    </a>
+                    <ul id="user-dropdown " class="dropdown-content ">
+                        <li>
+                            <a href="#! ">
+                                <i class="fa fa-cogs "></i> Settings</a>
+                        </li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="page-sign-in.html ">
+                                <i class="fa fa-sign-out "></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /Menu -->
+        </div>
+    </nav>
+    <aside class="yaybar yay-shrink yay-hide-to-small yay-gestures">
+        <div class="top">
+            <div>
+                <!-- Sidebar toggle -->
+                <a href="#" class="yay-toggle">
+                    <div class="burg1"></div>
+                    <div class="burg2"></div>
+                    <div class="burg3"></div>
+                </a>
+                <!-- Sidebar toggle -->
+                <!-- Logo -->
+                <a href="#!" class="brand-logo">
+                    <img src="assets/sma/osil-brand.png" alt="Osil Logo">
+                </a>
+                <!-- /Logo -->
+            </div>
+        </div>
+        <div class="nano">
+            <div class="nano-content">
+                <ul>
+                    <!-- <li class="yay-user-info">
+            <a href="page-profile.html">
+              <img src="assets/_con/images/avatar.jpg" alt="John Doe" class="circle">
+              <h3 class="yay-user-info-name">John Doe</h3>
+              <div class="yay-user-location">
+                <i class="fa fa-map-marker"></i> Las Vegas, NV</div>
+            </a>
+          </li> -->
+                    <!-- <li class="label">Menu</li> -->
+                    <li>
+                        <a href="index.html" class="waves-effect waves-blue">
+                            <i class="fa fa-bar-chart"></i> Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="profile.html" class="waves-effect waves-blue">
+                            <i class="fa fa-user"></i> User Profile</a>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect waves-blue">
+                            <i class="fa fa-inbox"></i> Inbox</a>
+                    </li>
+                    <li>
+                        <a href="help.html" class="waves-effect waves-blue">
+                            <i class="fa fa-info-circle"></i> Help Center</a>
+                    </li>
+                    <li>
+                        <a href="settings.html" class="waves-effect waves-blue">
+                            <i class="fa fa-cogs"></i> Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- /Yay Sidebar -->
+    <!-- Main Content -->
+    <section class="content-wrap">
+        <!-- Breadcrumb -->
+        <!-- <div class="page-title">
+      <div class="row">
+        <div class="col s12 m9 l10">
+          <form action="#!">
+            <div class="input-field mail-search">
+              <i class="mdi-action-search prefix"></i>
+              <input class="border-0 " id="mail_search" type="text" name="mail_search">
+              <label for="mail_search">Search Transactions, Invoices or Help</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> -->
+        <h4>Staff Profile</h4>
+        <!-- /Breadcrumb -->
+        <div class="row sortable">
+            <!-- Orders Card -->
+            <div class="col l8 s12">
+                <div class="card text-center">
+                    <div class="content">
+                        <img src="assets/img/avatar.png" alt="Avatar" class="circle photo profile-photo">
+                        <h3>Sideso Komeh</h3>
+                        <p class="m0">Admin Manager, Enyo HQ</p>
+                        <p class="m0">Lagos, Nigeria</p>
+                        <div class="profile-action">
+                            <a class="btn btn-blue">Edit Profile</a>
+                            <a class="btn btn-outline">Create Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="card profile-min">
+                    <div class="title">
+                        <h5>Recent Activities</h5>
+                        <a class="close" href="#">
+                            <i class="mdi-content-clear"></i>
+                        </a>
+                        <a class="minimize" href="#">
+                            <i class="mdi-navigation-expand-less"></i>
+                        </a>
+                    </div>
+                    <div class="content mail-card">
+                        <div class="row">
+                            <div class="col s2">
+                                <span class="fa fa-user activity-icon active-p"></span>
+                            </div>
+                            <div class="col s6">
+                                <p class="recent-p">
+                                    <a href="#">
+                                        <strong>Last 24 hours</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col s4 right-align">
+                                <small>Created 1 new Profile</small>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col s2">
+                                <span class="fa fa-refresh activity-icon active-d"></span>
+                            </div>
+                            <div class="col s6">
+                                <p class="recent-p">
+                                    <a href="#">
+                                        <strong>Awaiting Process</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col s4 right-align">
+                                <small>2 Staffs</small>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col s2">
+                                <span class="fa fa-refresh activity-icon active-s"></span>
+                            </div>
+                            <div class="col s6">
+                                <p class="recent-p">
+                                    <a href="#">
+                                        <strong>Awaiting Process</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col s4 right-align">
+                                <small>2 Staffs</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- /Main Content -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="layer-overlay"></div>
+        <div class="layer-content">
+            <form action="#!">
+                <!-- Header -->
+                <a class="search-bar-toggle grey-text text-darken-2" href="#!">
+                    <i class="mdi-navigation-close"></i>
+                </a>
+                <!-- Search Input -->
+                <div class="input-field">
+                    <i class="mdi-action-search prefix"></i>
+                    <input type="text" name="con-search" placeholder="Search...">
+                </div>
+                <!-- Search Results -->
+                <div class="search-results">
+                    <div class="row">
+                        <div class="col s12 l12">
+                            <h4>Posts</h4>
+                            <div class="no-result">No results were found ;(</div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /Search Bar -->
+
+    <footer>&copy; 2018
+        <strong>SmartPay</strong>. All rights reserved.
+    </footer>
+    <!-- DEMO [REMOVE IT ON PRODUCTION] -->
+    <script type="text/javascript" src="assets/_con/js/_demo.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery RAF (improved animation performance) -->
+    <script type="text/javascript" src="bower_components/jquery-requestAnimationFrame/dist/jquery.requestAnimationFrame.min.js"></script>
+    <!-- nanoScroller -->
+    <script type="text/javascript" src="bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+    <!-- Materialize -->
+    <script type="text/javascript" src="bower_components/materialize/bin/materialize.js"></script>
+    <!-- Simple Weather -->
+    <script type="text/javascript" src="bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+    <!-- d3 -->
+    <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+    <!-- nvd3 -->
+    <script type="text/javascript" src="bower_components/nvd3/build/nv.d3.min.js"></script>
+    <!-- Sortable -->
+    <script type="text/javascript" src="bower_components/Sortable/Sortable.min.js"></script>
+    <!-- d3 -->
+    <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+    <!-- nvd3 -->
+    <script type="text/javascript" src="bower_components/nvd3/build/nv.d3.min.js"></script>
+    <!-- Main -->
+    <script type="text/javascript" src="assets/_con/js/_con.min.js"></script>
+    <!-- Google Prettify -->
+    <script type="text/javascript" src="bower_components/code-prettify/src/prettify.js"></script>
+
+    <script>
+        /*
+         * Line Chart
+         */
+        (function () {
+            nv.addGraph(function () {
+                var chart = nv.models.lineChart()
+                    .margin({
+                        right: 10
+                    })
+                    .useInteractiveGuideline(true) //We want nice looking tooltips and a guideline!
+                    .showLegend(true) //Show the legend, allowing users to turn on/off line series.
+                    .showYAxis(true) //Show the y-axis
+                    .showXAxis(true) //Show the x-axis
+                ;
+
+                chart.xAxis //Chart x-axis settings
+                    .axisLabel('Time (ms)')
+                    .tickFormat(d3.format(',r'));
+
+                chart.yAxis //Chart y-axis settings
+                    .axisLabel('Amount (N)')
+                    .tickFormat(d3.format('.02f'));
+
+                /* Done setting the chart up? Time to render it!*/
+                var myData = sinAndCos(); //You need data...
+
+                d3.select('#chart1').append('svg') //Select the <svg> element you want to render the chart in.   
+                    .datum(myData) //Populate the <svg> element with chart data...
+                    .call(chart); //Finally, render the chart!
+
+                //Update the chart when window resizes.
+                nv.utils.windowResize(function () {
+                    chart.update()
+                });
+                return chart;
+            });
+
+            function sinAndCos() {
+                var sin = [],
+                    sin2 = [],
+                    cos = [];
+
+                //Data is represented as an array of {x,y} pairs.
+                for (var i = 0; i < 100; i++) {
+                    sin.push({
+                        x: i,
+                        y: Math.sin(i / 10)
+                    });
+                    cos.push({
+                        x: i,
+                        y: .5 * Math.cos(i / 10)
+                    });
+                }
+
+                //Line chart data should be sent as an array of series objects.
+                return [{
+                        values: sin, //values - represents the array of {x,y} data points
+                        key: 'Sine Wave', //key  - the name of the series.
+                        color: '#ff7f0e' //color - optional: choose your own line color.
+                    },
+                    {
+                        values: cos,
+                        key: 'Cosine Wave',
+                        color: '#2ca02c'
+                    }
+                ];
+            }
+        }());
+
+
+
+        /*
+         * Stacked Area Chart
+         */
+        (function () {
+            /*Data sample:
+        { 
+              "key" : "North America" , 
+              "values" : [ [ 1025409600000 , 23.041422681023] , [ 1028088000000 , 19.854291255832],
+               [ 1030766400000 , 21.02286281168], 
+               [ 1033358400000 , 22.093608385173],
+               [ 1036040400000 , 25.108079299458],
+               [ 1038632400000 , 26.982389242348]
+               ...
+  
+        */
+            d3.json('assets/_con/nvd3/stackedAreaData.json', function (data) {
+                nv.addGraph(function () {
+                    var chart = nv.models.stackedAreaChart()
+                        .margin({
+                            right: 40,
+                            left: 40
+                        })
+                        .x(function (d) {
+                            return d[0]
+                        }) //We can modify the data accessor functions...
+                        .y(function (d) {
+                            return d[1]
+                        }) //...in case your data is formatted differently.
+                        .useInteractiveGuideline(true) //Tooltips which show all data points. Very nice!
+                        .rightAlignYAxis(true) //Let's move the y-axis to the right side.
+                        .showControls(true) //Allow user to choose 'Stacked', 'Stream', 'Expanded' mode.
+                        .clipEdge(true);
+
+                    //Format x-axis labels with custom function.
+                    chart.xAxis
+                        .tickFormat(function (d) {
+                            return d3.time.format('%x')(new Date(d))
+                        });
+
+                    chart.yAxis
+                        .tickFormat(d3.format(',.2f'));
+
+                    d3.select('#chart2').append('svg')
+                        .datum(data)
+                        .call(chart);
+
+                    nv.utils.windowResize(chart.update);
+
+                    return chart;
+                });
+            })
+        }());
+    </script>
+
+
+</body>
+<!-- That UI Guy -->
+
+</html>
